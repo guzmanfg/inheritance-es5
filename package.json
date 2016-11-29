@@ -1,0 +1,24 @@
+{
+  "name": "inheritance-es5",
+  "version": "1.0.0",
+  "description": "Inheritance in javascript (ES5)",
+  "main": "inheritance.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "inheritance"
+  ],
+  "author": "guzman.fg",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "requirejs": "^2.3.2",
+    "semantic-release": "6.3.2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "esversion": 6,
+  "freeze": true,
+  "latedef": true,
+  "maxstatements": 70,
+  "futurehostile": true,
+  "noarg": true,
+  "unused": true,
+  "maxlen": 120,
+  "indent": 4,
+  "eqeqeq": true,
+  "nocomma": true,
+  "quotmark": "single",
+  "nonbsp": true,
+  "browser": true,
+  "bitwise": true,
+  "curly": true,
+  "maxparams": 4,
+  "undef": true,
+  "maxcomplexity": 10,
+  "nonew": true,
+  "forin": true
+}
+
+
+
