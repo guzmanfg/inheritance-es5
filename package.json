@@ -1,6 +1,6 @@
 {
   "name": "inheritance-es5",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Inheritance in javascript (ES5)",
   "main": "inheritance.js",
   "directories": {
@@ -8,17 +8,28 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "commit": "git-cz",
+    "test": "mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "inheritance"
   ],
-  "author": "guzman.fg",
+  "author": "guzmanfg",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
+    "commitizen": "2.8.6",
+    "cz-conventional-changelog": "1.2.0",
     "mocha": "^2.5.3",
     "requirejs": "^2.3.2",
-    "semantic-release": "6.3.2"
+    "semantic-release": "^6.3.2"
+  },
+  "commitizen": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guzmanfg/inheritance-es5.git"
   }
 }

@@ -1,14 +1,14 @@
 # inheritance-es5
 Inheritance in JavaScript (ES5)
 
-##What is this library objective?
+## What is this library objective?
 Inheritance in ES5, is quite obvious, isn't it?
 
 * Call super methods (`__super__`)
 * Use of instanceof (prototype chain)
 * Inheritance of properties 
 
-##How to use inheritance-es5
+## How to use inheritance-es5
 
 1. Write your javascript modules as usual.
 
