@@ -1,7 +1,7 @@
 /*global require, describe, it*/
 var expect = require('chai').expect;
 describe('Animals', function() {
-	var animals = require('../examples/nature/animals');
+	var animals = require('animals');
 	var Animal = animals.Animal;
 	var Mammal = animals.Mammal;
 	var Cat = animals.Cat;
