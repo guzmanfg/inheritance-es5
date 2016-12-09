@@ -1,6 +1,6 @@
 {
   "name": "inheritance-es5",
-  "version": "v1.0.0",
+  "version": "0.0.0-semantically-release",
   "description": "Inheritance in javascript (ES5)",
   "main": "inheritance.js",
   "directories": {
