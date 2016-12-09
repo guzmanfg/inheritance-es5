@@ -21,12 +21,29 @@
         return typeof fn === 'function';
     }
 
+    function cloneDescriptor(descriptor) {
+        var copy = {
+            enumerable: descriptor.enumerable,
+            configurable: descriptor.configurable,
+            writable: descriptor.writable
+        };
+
+        if (isFunction(descriptor.get)) {
+            copy.get = descriptor.get;
+        }
+        if (isFunction(descriptor.set)) {
+            copy.set = descriptor.set;
+        }
+
+        return copy;
+    }
+
     function setSuperProperty(prototype, key, descriptor) {
         prototype.__descriptors__ = prototype.__descriptors__ || {};
         var hasGetter = descriptor && isFunction(descriptor.get);
         var hasSetter = descriptor && isFunction(descriptor.set);
         if (hasGetter || hasSetter) {
-            prototype.__descriptors__[key] = Object.assign({}, descriptor);
+            prototype.__descriptors__[key] = cloneDescriptor(descriptor);
         }
     }
 
