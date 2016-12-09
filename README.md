@@ -1,5 +1,12 @@
 # inheritance-es5
+[![travis build](https://img.shields.io/travis/guzmanfg/inheritance-es5.svg?style=flat-square)]()
+[![codecov coverage](https://img.shields.io/codecov/c/github/guzmanfg/inheritance-es5.svg?style=flat-square)]()
+[![npm version](https://img.shields.io/npm/v/inheritance-es5.svg?style=flat-square)]()
+[![npm license](https://img.shields.io/npm/l/inheritance-es5.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+
 Inheritance in JavaScript (ES5)
+
 
 ## What is this library objective?
 Inheritance in ES5, is quite obvious, isn't it?
