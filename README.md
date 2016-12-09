@@ -86,4 +86,5 @@ Inheritance in ES5, is quite obvious, isn't it?
     ```
 ## TODOs
 
-* Readable test suite
+* Readable test suite.
+* If a property is not configurable, then it can not be overwritten.
