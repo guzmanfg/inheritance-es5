@@ -9,8 +9,11 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha test/inheritance.spec -w",
-    "test:single": "istanbul cover -x *.spec.js -x examples/* node_modules/mocha/bin/_mocha -- -R spec test/inheritance.spec.js",
+    "test": "mocha test/*.spec -w",
+    "test:single": "mocha test/*.spec.js",
+    "test:coverage": "npm run-script test:analyze-coverage && npm run-script test:check-coverage",
+    "test:check-coverage": "nyc check-coverage --statemets 100 --branches 100 --functions 100 --lines 100",
+    "test:analyze-coverage": "nyc --reporter=lcov npm run test:single",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
@@ -20,7 +23,7 @@
   "license": "MIT",
   "config": {
     "ghooks": {
-      "pre-commit": "npm run test:single"
+      "pre-commit": "npm run test:coverage"
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
@@ -31,8 +34,8 @@
     "commitizen": "2.8.6",
     "cz-conventional-changelog": "1.2.0",
     "ghooks": "1.3.2",
-    "istanbul": "0.4.5",
     "mocha": "^2.5.3",
+    "nyc": "10.0.0",
     "requirejs": "^2.3.2",
     "semantic-release": "^6.3.2"
   },
