@@ -14,7 +14,7 @@
     "test:coverage": "npm run-script test:analyze-coverage && npm run-script test:check-coverage",
     "test:check-coverage": "nyc check-coverage --statemets 100 --branches 100 --functions 100 --lines 100",
     "test:analyze-coverage": "nyc --reporter=lcov npm run test:single",
-    "report:coverage": "cat./coverage/lcov.info | codecov",
+    "report:coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
