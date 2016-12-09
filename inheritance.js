@@ -63,9 +63,7 @@
     }
 
     function setSuper(inheritor, base) {
-        var baseHasConstructor = isFunction(base.prototype.constructor);
-        var baseHasParent = base.prototype.constructor !== Object;
-        var superConstructor = (baseHasConstructor && baseHasParent) ? base.prototype.constructor : base;
+        var superConstructor = base.prototype.constructor;
 
         inheritor.__super__ = function(context, params) {
             return superConstructor.apply(context, params);
