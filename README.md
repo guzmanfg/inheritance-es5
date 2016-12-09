@@ -84,3 +84,6 @@ Inheritance in ES5, is quite obvious, isn't it?
     var haku = new Cat({name: 'Haku'});
     haku.eat(); // Haku is eating!
     ```
+## TODOs
+
+* Readable test suite
